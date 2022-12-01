@@ -14441,7 +14441,7 @@ if not msg.DevMain then
 return LuaTele.sendText(msg.chat_id,msg.id,Reply_Status(msg.sender_id.user_id,'⌯︙هذا الامر يخص ↫ '..Controller_Num(1)..' .\n•-› X').Warning,"md",true)    
 end
 os.execute('rm -rf alhalfe.lua') 
-os.execute('curl -s https://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@raw.githubusercontent.com/s00f4/Dragon/main/alhalfe.lua -o alhalfe.lua')
+os.execute('curl -s https://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@raw.githubusercontent.com/Grekom/alhalfe/main/alhalfe.lua -o alhalfe.lua')
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
 local Text = [[
 *⌯︙تم تحديث السورس ...✓*
@@ -14570,7 +14570,7 @@ LuaTele.sendText(msg.chat_id,msg.id,DraGoN,"md",true)
 return false
 end
 if text == 'هلو' or text == 'هلا' or text == 'هلاو' or text == 'ههلا' or text == 'ههلاو' or text == 'هلاو' or text == 'هاي' or text == 'ههاي' then
-local DraGoN = {"ۿهـلاٱ ؏ـمࢪي 🤍","هٓهَـلاٱ گ̲ـلبي❤️‍🔥","ۿـلاٱ حـَبـيبيَ ♥️","ڪل الۿـلاآ يَابُةه 💖"," آطلـق ۿهَـلآو ❤️‍🩹🧸","هُهَـلاٱ يـٰٰرﯞحـًٛيہ🙊💞","ۿـلاٱ بَلحـبَ ﻣﻣـَاُلتي 😔💖"}
+local DraGoN = {"ۿهـلاٱ ؏ـمࢪي ??","هٓهَـلاٱ گ̲ـلبي❤️‍🔥","ۿـلاٱ حـَبـيبيَ ♥️","ڪل الۿـلاآ يَابُةه 💖"," آطلـق ۿهَـلآو ❤️‍🩹🧸","هُهَـلاٱ يـٰٰرﯞحـًٛيہ🙊💞","ۿـلاٱ بَلحـبَ ﻣﻣـَاُلتي 😔💖"}
 DraGoN2 = math.random(#DraGoN) 
 LuaTele.sendText(msg.chat_id,msg.id,DraGoN[DraGoN2],"md",true)  
 return false
@@ -16735,7 +16735,7 @@ if not msg.DevMain then
 return LuaTele.sendText(msg.chat_id,msg.id,Reply_Status(msg.sender_id.user_id,'⌯︙هذا الامر يخص ↫ '..Controller_Num(1)..' .\n•-› X').Warning,"md",true)    
 end
 os.execute('rm -rf alhalfe.lua') 
-os.execute('curl -s https://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@raw.githubusercontent.com/s00f4/Dragon/main/alhalfe.lua -o alhalfe.lua') 
+os.execute('curl -s https://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@raw.githubusercontent.com/Grekom/alhalfe/main/alhalfe.lua -o alhalfe.lua') 
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
 local Text = [[
 *⌯︙تم تحديث السورس ...✓*
