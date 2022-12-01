@@ -60,25 +60,25 @@ local Informationlua = io.open("Information.lua", 'w')
 Informationlua:write([[
 return {Token = "]]..Redis:get(SshId.."Info:Redis:Token")..[[",UserBot = "]]..Redis:get(SshId.."Info:Redis:Token:User")..[[",UserSudo = "]]..Redis:get(SshId.."Info:Redis:User")..[[",SudoId = ]]..Redis:get(SshId.."Info:Redis:User:ID")..[[}]])
 Informationlua:close()
-local Dragon = io.open("Dragon", 'w')
-Dragon:write([[
+local alhalfe = io.open("alhalfe", 'w')
+alhalfe:write([[
 cd $(cd $(dirname $0); pwd)
 while(true) do
 lua5.3 alhalfe.lua
 done
 ]])
-Dragon:close()
+alhalfe:close()
 Redis:del(SshId.."Info:Redis:User:ID");Redis:del(SshId.."Info:Redis:User");Redis:del(SshId.."Info:Redis:Token:User");Redis:del(SshId.."Info:Redis:Token")
-os.execute('chmod +x Dragon;chmod +x Run;./Run')
+os.execute('chmod +x alhalfe;chmod +x Run;./Run')
 end
 Information = dofile('./Information.lua')
 Sudo_Id = Information.SudoId
 UserSudo = Information.UserSudo
 Token = Information.Token
 UserBot = Information.UserBot
-Dragon = Token:match("(%d+)")
-os.execute('sudo rm -fr .CallBack-Bot/'..Dragon)
-LuaTele = luatele.set_config{api_id=1846213,api_hash='c545c613b78f18a30744970910124d53',session_name=Dragon,token=Token}
+alhalfe = Token:match("(%d+)")
+os.execute('sudo rm -fr .CallBack-Bot/'..alhalfe)
+LuaTele = luatele.set_config{api_id=1846213,api_hash='c545c613b78f18a30744970910124d53',session_name=alhalfe,token=Token}
 function var(value)
 print(serpent.block(value, {comment=false}))   
 end 
@@ -14570,7 +14570,7 @@ LuaTele.sendText(msg.chat_id,msg.id,DraGoN,"md",true)
 return false
 end
 if text == 'هلو' or text == 'هلا' or text == 'هلاو' or text == 'ههلا' or text == 'ههلاو' or text == 'هلاو' or text == 'هاي' or text == 'ههاي' then
-local DraGoN = {"ۿهـلاٱ ؏ـمࢪي ??","هٓهَـلاٱ گ̲ـلبي❤️‍🔥","ۿـلاٱ حـَبـيبيَ ♥️","ڪل الۿـلاآ يَابُةه 💖"," آطلـق ۿهَـلآو ❤️‍🩹🧸","هُهَـلاٱ يـٰٰرﯞحـًٛيہ🙊💞","ۿـلاٱ بَلحـبَ ﻣﻣـَاُلتي 😔💖"}
+local DraGoN = {"ۿهـلاٱ ؏ـمࢪي 🤍","هٓهَـلاٱ گ̲ـلبي❤️‍🔥","ۿـلاٱ حـَبـيبيَ ♥️","ڪل الۿـلاآ يَابُةه 💖"," آطلـق ۿهَـلآو ❤️‍🩹🧸","هُهَـلاٱ يـٰٰرﯞحـًٛيہ🙊💞","ۿـلاٱ بَلحـبَ ﻣﻣـَاُلتي 😔💖"}
 DraGoN2 = math.random(#DraGoN) 
 LuaTele.sendText(msg.chat_id,msg.id,DraGoN[DraGoN2],"md",true)  
 return false
@@ -22417,7 +22417,7 @@ Redis:del(Dragon.."SilentGroup:Group"..ChatId)
 LuaTele.editMessageText(ChatId,msg_id,"⌯︙تم مسح المكتومين", 'md', false)
 end
 end
---     Source Dragon     -- 
+--     Source alhalfe     -- 
 end
 end
 luatele.run(CallBackLua)
